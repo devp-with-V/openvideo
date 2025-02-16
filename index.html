@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="sstyle.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./public/sstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Streamer</title>
     
@@ -29,7 +28,7 @@
             <button class="cta-button">Get Started</button>
         </div>
         <div class="hero-image">
-            <img src="https://source.unsplash.com/600x400/?video,technology" alt="Video Streaming" style="border-radius: 10px;">
+            <img src="./public/img.jpg"radius: 10px;>
         </div>
     </section>
 
@@ -49,12 +48,12 @@
 
     <script>
         document.getElementById("videoInput").addEventListener("change", function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const videoURL = URL.createObjectURL(file);
-        document.getElementById("videoPlayer").src = videoURL;
-    }
-});
+            const file = event.target.files[0];
+            if (file) {
+                const videoURL = URL.createObjectURL(file);
+                document.getElementById("videoPlayer").src = videoURL;
+            }
+        });
     </script>
 
 </body>
